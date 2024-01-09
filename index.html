@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src = "script.js" defer></script>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <dialog id="addBookDialog">
+        <form id="bookForm">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required>
+    
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" name="bookAuthor" required>
+    
+            <label for="bookPages">Pages:</label>
+            <input type="number" id="bookPages" name="bookPages" required>
+    
+            <input type="submit" value="Add Book">
+            <button id = "cancel-input" type="button">Cancel</button>
+        </form>
+    </dialog>
+    <div class="main-container">
+        <div class = "header">
+            <button class = "book-button"> + Add Book</button>
+            <div>Library</div>
+            <button class = "name-button">Adee Aryaa</button>
+        </div>
+        <div class = "main-books-container">
+        </div>
+    </div>
+    
+</body>
+</html>
