@@ -59,8 +59,7 @@ document.querySelector("#cancel-input").addEventListener("click", () => {
   document.querySelector('#addBookDialog').close();
 })
 
-// Initial books
-const bookOne = new Book("Harry Potter", "JK Rowling", "300", "yes");
-const bookTwo = new Book("Harry Potty", "JK Rowing", "300", "no");
-myLibrary.push(bookOne, bookTwo);
-displayBooks();
+document.querySelector(".clear-button").addEventListener("click", () => {
+  cardContainer.innerHTML= '';
+  myLibrary = [];
+})
